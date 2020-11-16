@@ -1,0 +1,373 @@
+
+/* General css rules for website */
+h1{
+  color: #222831;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.info-format{
+  font-size: 3rem;
+  padding: 7% 20%;
+  font-family: 'Lora', sans-serif;
+  font-weight: normal;
+  
+}
+
+a{
+  color: #590995;
+}
+
+body{
+  height:100%;
+}
+
+
+.info-format h2{
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.hero-img{
+  filter: blue(5px);
+  width: 100%;
+}
+
+.hero-txt{
+  position: absolute;
+ 
+  font-size: 15px;
+  left:2%;
+  top: 15%;
+  color: black;
+}
+.video-section{
+  
+  height: 900px;
+}
+
+
+.video{
+  height: 100%;
+  width: 100%;
+  
+  
+
+}
+
+.image-container img{
+  width: 100%;
+}
+
+.color{
+  background-color: #ffcd38;
+  color: black;
+}
+
+.white{
+  background-color: #eeeeee;
+  color: black ;
+}
+
+.format{
+  padding: 7% 8%;
+  margin-top: 0;
+  font-size: 3rem;
+  font-family: 'Lora', sans-serif;
+  font-weight: normal;
+  text-align: center;
+
+}
+
+.format li{
+  text-align: left;
+}
+
+.format h2{
+  font-weight: bold;
+  font-size: 4.5rem;
+}
+
+
+.card-text{
+  font-family: 'Lora', serif;
+  padding: 5%;
+}
+
+.navbar{
+  height: 2%;
+  font-size: 2rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+}
+
+.navbar-inverse .navbar-brand{
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  background-color: #ffcd38;
+}
+
+.navbar-inverse .navbar-brand:hover{
+  background-color: #ecbf36;
+  color: white;
+}
+
+.donate-form{
+  text-align: right;
+  padding: 7% 10%;
+  margin-right: 50%;
+}
+
+
+
+
+
+
+
+/* css rules for the buttons and their animations */
+.color-button {
+  margin-top: 2%;
+  color: #FFF;
+  background-color: #590995;
+  transition: all 0.5s;
+  position: relative; 
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(27, 27, 27, 0.61);
+}
+.color-button span {
+  z-index: 2; 
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;   
+}
+.color-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,205,56, 0);
+  background-color: rgba(255,205,56,0);
+}
+.color-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0);
+  background-color: rgba(255,255,255,0);
+}
+.color-button:hover::before {
+transform: rotate(-45deg);
+background-color: #fcfcfc3b;
+}
+.color-button:hover::after {
+transform: rotate(45deg);
+background-color: #f7f6f842;
+}
+
+
+.hero-btn{
+  width: 150px;
+  font-size: 2.5rem;
+  background-color: #590995;
+  color: white;
+
+}
+
+
+/* CSS rules for the article section on learn.html */
+.article-section{
+  padding: 7% 18%;
+
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+}
+
+.article-section h1{
+  font-weight: bold;
+  font-size: 7rem;
+  text-align: center;
+}
+
+.article-section h2{
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+
+
+/* CSS rules for the card section */
+
+.color .card{
+  background-color: #eeeeee;
+}
+
+
+.card-img-top{
+  width:100%;
+  height: 100%;
+
+}
+
+.card-header{
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 25rem;
+  
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-btn{
+  width:100%;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 25px 16px;
+}
+
+.card-container{
+  padding: 7% 15%;
+}
+
+.card-text{
+  font-size: 2rem;
+}
+
+
+/* CSS rules for the footer section */
+
+.footer{
+  height: 200px;
+  width: 100%;
+  color: rgb(70, 68, 68);
+  background-color: rgb(70, 68, 68);
+  padding: 4% 15%;
+  text-align: center;
+}
+
+
+
+
+.footer a{
+  margin-top:25px;
+  color: white;
+}
+
+
+.bg-modal{
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal-content{
+  width: 500px;
+  height: 1000px;
+  margin-top:25px;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.bg-modal-thanks{
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal-content-thanks{
+  width: 500px;
+  height: 200px;
+  margin-top:25px;
+  background-color: #ffcd38;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+
+}
+
+
+
+.petition-modal{
+  width:100%;
+  height:400%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 1;
+}
+
+.petition-modal-content{
+  width: 500px;
+  height: 350px;
+  margin-top:25px;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+input{
+  width: 50%;
+  display: block;
+  margin: 15px auto;
+}
+
+.close{
+  position: absolute;
+  top: 0px;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  
+}
+
+
+
